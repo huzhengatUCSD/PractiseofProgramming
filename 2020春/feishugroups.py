@@ -4,5 +4,7 @@ group=[]
 for i in range(len(ls)//2): 
     group.append((ls[i]+ls[i+3]) % 27 +1)
 group=list(set(group))
+group.remove(2)
+group.append(20)
 group.sort()
 print('飞书项目组号为：%s' % group)
